@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css"/>
+  </head>
+  <body>
+   
+   
+
+    <!-- Abbiamo bisogno di un sito web per un'agenzia di viaggi!
+
+In questa pagina aggiungerai destinazioni di posti che sogni di visitare in futuro.
+
+Il progetto non richiede alcuna customizzazione di CSS, dovrai crearlo interamente usando le classi di bootstrap, sia per quello che riguarda il layout che lo stile.
+
+
+Testa frequentemente il tuo lavoro nelle 3 principali risoluzioni (mobile, tablet, desktop) usando i developer tools del browser nella sezione emulazione device, per una maggiore precisione.
+
+Inizia utilizzando i componenti esistenti di Bootstrap 5 per creare la tua pagina (modificali all'occorrenza utilizzando le utility classes di bootstrap: colori, spazi, margini, dimensioni etc...)
+Usa container > row > col-* in questo ordine per ottenere un layout responsive perfetto.
+
+Esercizi:
+
+1) Implementa una navbar con questi elementi di menu:
+Home
+Saldi
+Welcome Summer
+Last Minute
+Recensioni
+
+----INIZIO NAV---
+ -->
+ <div class="container-fluid">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+ <img class="navbar-brand" src="./img/logoviaggi.jpg" alt="logoviaggio">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Saldi">Saldi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Welcome Summer">Welcome Summer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Last minute">Last minute</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Recensioni">Recensioni</a>
+    
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Cerca posti del luogo" aria-label="Search">
+        <button class="btn btn-outline-danger" type="submit">Cerca</button>
+      </form>
+    </div>
+  </div>
+<!-- 
+Collegherai ogni sezione della pagina agli elementi del menu corrispondenti. 
+
+2) Aggiungi un logo alla navbar, un qualsiasi logo di agenzia di viaggi, anche inventata.
+
+3) Aggiungi una sezione introduttiva con il nome, il payoff dell'agenzia, 
+una breve descrizione in corsivo e una call-to-action (bottone) "Prenota ora" di colore azzurro chiaro e testo bianco e grassetto
+
+Il background della sezione sarà grigio chiaro e con bordi arrotondati e del padding generoso all'interno
+
+----CARD CENTRALE---
+ -->
+ <div class=" container mt-5 ms-4 style="width: 18rem;>
+<div class="card">
+<section class="card-header d-flex fs-1 align-items-center mb-0">
+    Eveline-R - <h3 class="align-items-center fs-6 mt-3" >Fell the Freedom </h3> </section>
+  <div class="card-body">
+    <h5 class="card-title mb-5">Scopri le destinazioni più calde del momento!</h5>
+   
+    <a href="#" class="btn btn-info mb-2 w-auto text-body">Prenota ora</a>
+  </div>
+</div>
+</div>
+<!--  
+4) Implementa la sezione "Saldi". Qui mostrerai 4 destinazioni.
+
+In questa sezione dovranno esserci:
+
+ -->
+
+  <h3 class=" ms-5 mb-0 mt-5 fw-bold fs-4" >Saldi</h3>
+    
+<div class="ms-5 row mt-0 gy-3 row-cols-2 row-cols-md-2 row-cols-lg-4">
+   
+    
+      <div class="col  ">
+        <!-- CARD 1 -->
+        <div class="card w-100 h-100">
+          <img
+            src="img/MALDIVE.jpg"
+            class="card-img-top"
+            alt="imgmaldive"
+          />
+          <div class="card-body border border-info">
+            <h5 class="card-title">MALDIVE</h5>
+            <p class="card-text">
+              Le Maldive sono un Paese tropicale nell’Oceano Indiano composto da 26 atolli
+               ad anello formati da più di 1000 isole coralline. Queste isole sono famose per le spiagge, le lagune di acqua blu e le lunghe barriere di corallo. La capitale Malé ospita un mercato del pesce molto frequentato, ristoranti e negozi che si affacciano sulla strada principale, Majeedhee Magu, e la Hukuru Miskiy (chiamata anche Moschea del Venerdì) del XVII secolo, fatta di corallo bianco intarsiato.
+            </p>
+            <a href="#" class="btn btn-info">Prenota</a>
+          </div>
+        </div>
+ 
+        <!-- FINE CARD -->
+    
+      </div>
+      <div class="col ">
+        <!-- CARD 2 -->
+        <div class="card w-100 h-100">
+          <img
+            src="img/san francisco.jpg"
+            class="card-img-top"
+            alt="imgsanfrancisco"
+          />
+          <div class="card-body border border-info">
+            <h5 class="card-title">SAN FRANCISCO</h5>
+            <p class="card-text">
+              San Francisco, nel nord della California,
+               è una città collinare situata sulla punta di una penisola circondata dall'Oceano Pacifico e dalla Baia di San Francisco. Oltre alla nebbia perenne, è celebre anche per il Golden Gate Bridge, i tram e le case vittoriane dai mille colori. Il Transamerica Pyramid, nel quartiere finanziario, è il grattacielo più famoso della città. Nella baia si trova l'isola di Alcatraz, sede del famigerato penitenziario.
+            </p>
+            <a href="#" class="btn btn-info">Prenota</a>
+          </div>
+        </div>
+        <!-- FINE CARD -->
+      </div>
+      <div class="col ">
+        <!-- CARD 3 -->
+        <div class="card w-100 h-100">
+          <img
+            src="img/LONDRA.jpg"
+            class="card-img-top"
+            alt="imgLondra"
+          />
+          <div class="card-body border border-info">
+            <h5 class="card-title">LONDRA</h5>
+            <p class="card-text">
+              Londra, capitale dell'Inghilterra e del Regno Unito, è una città estremamente contemporanea con una storia che risale all'antica Roma. Nel suo centro sorgono l'imponente Palazzo del Parlamento, 
+              l'iconica torre dell'orologio nota come Big Ben e l'abbazia di Westminster, dove hanno luogo le incoronazioni monarchi britannici.Dall'altra parte del Tamigi, la ruota panoramica London Eye offre
+               la vista spettacolare del distretto culturale del South Bank e dell'intera città.
+            </p>
+            <a href="#" class="btn btn-info">Prenota</a>
+          </div>
+        </div>
+        <!-- FINE CARD -->
+      </div>
+      <div class="col ">
+        <!-- CARD 4 -->
+        <div class="card w-100 h-100">
+          <img
+            src="img/IRLANDA.jpeg"
+            class="card-img-top"
+            alt="imgirlanda"
+          />
+          <div class="card-body border border-info">
+            <h5 class="card-title">IRLANDA</h5>
+            <p class="card-text">
+              La Repubblica di Irlanda occupa la maggior parte dell'isola d'Irlanda, al largo delle coste di Galles e Inghilterra. La sua capitale, Dublino, è la città natale di scrittori quali Oscar Wilde e della birra Guinness.
+     Soprannominata "l'isola di smeraldo" per il suo paesaggio verde, è punteggiata di castelli, tra cui il medievale Cahir Castle. Il paese si colloca quasi in cima alla classifica degli Stati dell'Unione Europea per il livello dei prezzi di beni di consumo.
+            </p>
+            <a href="#" class="btn btn-info">Prenota</a>
+          </div>
+        </div>
+      </div>
+</div>
+    <!--  
+4 card per destinazioni per linea a schermo grande - desktop (quattro sulla stessa linea)
+3 card per destinazioni per linea a schermo medio  - tablet  (una dovrà scomparire)
+2 card per destinazioni per linea a schermo piccolo - mobile (due per linea)
+
+le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e testo default
+
+5) Implementa la sezione "Welcome Summer". Qui mostrerai 6 destinazioni al tuo utente. (nessun bordo, ma stesso stile dei bottoni precedenti)
+
+In questa sezione dovranno esserci:
+ -->
+<h3  class="ms-5 mt-5 mb-0 fw-bold fs-4">Welcome Summer</h3>
+ 
+<div class="ms-5 row mt-0 gy-3 row-cols-2 row-cols-md-2 row-cols-lg-3">
+  <div class="col  ">
+    <!-- CARD 1 -->
+    <div class="card w-100 h-100">
+      <img
+        src="img/MALDIVE.jpg"
+        class="card-img-top"
+        alt="imgmaldive"
+      />
+      <div class="card-body shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <h5 class="card-title">MALDIVE</h5>
+        <p class="card-text">
+          Le Maldive sono un Paese tropicale nell’Oceano Indiano composto da 26 atolli
+           ad anello formati da più di 1000 isole coralline. Queste isole sono famose per le spiagge, le lagune di acqua blu e le lunghe barriere di corallo. La capitale Malé ospita un mercato del pesce molto frequentato, ristoranti e negozi che si affacciano sulla strada principale, Majeedhee Magu, e la Hukuru Miskiy (chiamata anche Moschea del Venerdì) del XVII secolo, fatta di corallo bianco intarsiato.
+        </p>
+        <a href="#" class="btn btn-info">Prenota</a>
+      </div>
+    </div>
+
+    <!-- FINE CARD -->
+
+  </div>
+  <div class="col ">
+    <!-- CARD 2 -->
+    <div class="card w-100 h-100">
+      <img
+        src="img/san francisco.jpg"
+        class="card-img-top"
+        alt="imgsanfrancisco"
+      />
+      <div class="card-body shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <h5 class="card-title">SAN FRANCISCO</h5>
+        <p class="card-text">
+          San Francisco, nel nord della California,
+           è una città collinare situata sulla punta di una penisola circondata dall'Oceano Pacifico e dalla Baia di San Francisco. Oltre alla nebbia perenne, è celebre anche per il Golden Gate Bridge, i tram e le case vittoriane dai mille colori. Il Transamerica Pyramid, nel quartiere finanziario, è il grattacielo più famoso della città. Nella baia si trova l'isola di Alcatraz, sede del famigerato penitenziario.
+        </p>
+        <a href="#" class="btn btn-info">Prenota</a>
+      </div>
+    </div>
+    <!-- FINE CARD -->
+  </div>
+  <div class="col ">
+    <!-- CARD 3 -->
+    <div class="card w-100 h-100">
+      <img
+        src="img/LONDRA.jpg"
+        class="card-img-top"
+        alt="imgLondra"
+      />
+      <div class="card-body shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <h5 class="card-title">LONDRA</h5>
+        <p class="card-text">
+          Londra, capitale dell'Inghilterra e del Regno Unito, è una città estremamente contemporanea con una storia che risale all'antica Roma. Nel suo centro sorgono l'imponente Palazzo del Parlamento, 
+          l'iconica torre dell'orologio nota come Big Ben e l'abbazia di Westminster, dove hanno luogo le incoronazioni monarchi britannici.Dall'altra parte del Tamigi, la ruota panoramica London Eye offre
+           la vista spettacolare del distretto culturale del South Bank e dell'intera città.
+        </p>
+        <a href="#" class="btn btn-info">Prenota</a>
+      </div>
+    </div>
+    <!-- FINE CARD -->
+  </div>
+  <div class="col ">
+    <!-- CARD 4 -->
+    <div class="card w-100 h-100">
+      <img
+        src="img/LONDRA.jpg"
+        class="card-img-top"
+        alt="imgLondra"
+      />
+      <div class="card-body shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <h5 class="card-title">LONDRA</h5>
+        <p class="card-text">
+          Londra, capitale dell'Inghilterra e del Regno Unito, è una città estremamente contemporanea con una storia che risale all'antica Roma. Nel suo centro sorgono l'imponente Palazzo del Parlamento, 
+          l'iconica torre dell'orologio nota come Big Ben e l'abbazia di Westminster, dove hanno luogo le incoronazioni monarchi britannici.Dall'altra parte del Tamigi, la ruota panoramica London Eye offre
+           la vista spettacolare del distretto culturale del South Bank e dell'intera città.
+        </p>
+        <a href="#" class="btn btn-info">Prenota</a>
+      </div>
+    </div>
+    <!-- FINE CARD -->
+  </div>
+  <div class="col ">
+    <!-- CARD 5 -->
+    <div class="card w-100 h-100">
+      <img
+        src="img/LONDRA.jpg"
+        class="card-img-top"
+        alt="imgLondra"
+      />
+      <div class="card-body shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <h5 class="card-title">LONDRA</h5>
+        <p class="card-text">
+          Londra, capitale dell'Inghilterra e del Regno Unito, è una città estremamente contemporanea con una storia che risale all'antica Roma. Nel suo centro sorgono l'imponente Palazzo del Parlamento, 
+          l'iconica torre dell'orologio nota come Big Ben e l'abbazia di Westminster, dove hanno luogo le incoronazioni monarchi britannici.Dall'altra parte del Tamigi, la ruota panoramica London Eye offre
+           la vista spettacolare del distretto culturale del South Bank e dell'intera città.
+        </p>
+        <a href="#" class="btn btn-info">Prenota</a>
+      </div>
+    </div>
+    <!-- FINE CARD -->
+  </div>
+  <div class="col ">
+    <!-- CARD 6 -->
+    <div class="card w-100 h-100">
+      <img
+        src="img/IRLANDA.jpeg"
+        class="card-img-top"
+        alt="imgirlanda"
+      />
+      <div class="card-body shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <h5 class="card-title">IRLANDA</h5>
+        <p class="card-text">
+          La Repubblica di Irlanda occupa la maggior parte dell'isola d'Irlanda, al largo delle coste di Galles e Inghilterra. La sua capitale, Dublino, è la città natale di scrittori quali Oscar Wilde e della birra Guinness.
+ Soprannominata "l'isola di smeraldo" per il suo paesaggio verde, è punteggiata di castelli, tra cui il medievale Cahir Castle. Il paese si colloca quasi in cima alla classifica degli Stati dell'Unione Europea per il livello dei prezzi di beni di consumo.
+        </p>
+        <a href="#" class="btn btn-info">Prenota</a>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- 
+6 card per destinazioni per linea a schermo extra large
+3 card per destinazioni per linea a schermo grande (desktop)
+2 card per destinazioni per linea a schermo medio (tablet)
+2 card per destinazioni per linea a schermo piccolo (mobile)
+
+6) Implementa la sezione "Offerta del giorno". Qui avrai:
+
+66% dello spazio dedicato all'immagine del luogo di destinazione
+33% dedicato al nome, date, prezzo e un badge con "best offer" come testo
+
+l'immagine avrà i bordi arrotondati e un'ombra leggera
+per il contenuto: il nome dovrà essere più grande del resto,
+le date dovranno essere formattate con font "monospace",
+il prezzo dovrà essere definito come "lead"
+e il badge sarà scuro
+ -->
+ <h3  class="ms-5 mt-5 fw-bold fs-4">Offerta del giorno</h3>
+
+ <div class="ms-5 d-flex">
+  <img  src="img/MALDIVE.jpg" class="rounded" alt="imgmaldive">
+  <div class="column mb-3 mt-0 text-body ">
+  <h3 class="ms-3 fs-1 ">Fushifaru</h3>
+  <h3 class="ms-3 fs-1 ">Maldive</h3>
+  <h3 class="ms-3 fs-5 ">27 - 06 - 2023 - 28 - 07 - 2023.</h3>
+  <h3 class="ms-3 fs-5 mt-4 ">Non pensare al prezzo</h3>
+  <h3 class="ms-3 fs-5 mt-0 "> ma pensa solo a partire!!</h3>
+  <button type="button" class="btn btn-dark fs-6 rounded-5 p-0 ms-2 mt-2" > Parti ora </button>
+  </button>
+</div>
+ </div>
+ <!-- 
+7) Rendi invisibile la sezione "Offerta del giorno" su schermi piccoli.
+
+8) Aggiungi nella sezione "Welcome Summer" un'ombra grande ad ogni card.
+
+9) Crea una sezione "Last Minute", in cui mostrerai 6 immagini delle destinazioni last minute come rettangoli ombreggiati dai bordi arrotondati, senza testo. Rendile responsive come preferisci!
+
+
+ -->
+ <h3  class="ms-5 mt-5 fw-bold fs-4">Last minite</h3>
+ <div class="ms-5 d-flex ms-5 row mt-0 gy-3 row-cols-2 row-cols-md-3 row-cols-lg-6 ">
+  <img  src="img/MALDIVE.jpg" class="rounded" alt="imgmaldive">
+  <img  src="img/MALDIVE.jpg" class="rounded" alt="imgmaldive">
+  <img  src="img/MALDIVE.jpg" class="rounded" alt="imgmaldive">
+  <img  src="img/MALDIVE.jpg" class="rounded" alt="imgmaldive">
+  <img  src="img/MALDIVE.jpg" class="rounded" alt="imgmaldive">
+  <img  src="img/MALDIVE.jpg" class="rounded" alt="imgmaldive">
+ </div>
+<!-- 
+ 10) Crea una sezione "Recensioni", dove l'utente potrà trovare alcuni feedback da utenti fittizi. 
+Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recensione a destra
+
+11) Crea un footer con le informazioni dell'agenzia e un bottone "Contattaci".
+
+ -->
+ <h3  class="text-center ms-5 mt-5 fw-bold fs-4">Dicono di noi</h3>
+ <div class="container">
+
+  <div class="column-gap-1">
+   <h3 class="fs-5 fw-bold mb-1">Username</h3>
+   <p class="fs-5 mb-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem cupiditate unde est optio quam laboriosam praesentium voluptatem dolor, autem suscipit! Perferendis dignissimos error repellendus quod, placeat nam at quam porro!</p>
+  
+   <h3 class="fs-5 fw-bold mb-1">Username</h3>
+   <p class="fs-5 mb-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem cupiditate unde est optio quam laboriosam praesentium voluptatem dolor, autem suscipit! Perferendis dignissimos error repellendus quod, placeat nam at quam porro!</p>
+
+   <h3 class="fs-5 fw-bold mb-1">Username</h3>
+   <p class="fs-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem cupiditate unde est optio quam laboriosam praesentium voluptatem dolor, autem suscipit! Perferendis dignissimos error repellendus quod, placeat nam at quam porro!</p>
+  </div>
+ </div>
+
+ <!-- 
+EXTRAS
+
+12) Crea un bottone vicino ad ogni sezione per collassarla e riaprirla se premuto.
+
+13) Crea la possibilità di contare il numero di "viaggi" presenti sulla pagina e visualizzare il risultato in un alert.
+
+14) Crea un modale con un campo email e un messaggio.
+
+15) Quando l'utente cliccherà su "Contattaci", il modale dovrà essere visualizzato.
+
+16) Crea una funzione che aggiunga un badge con la scritta "HOT" su ognuna delle offerte "Welcome Summer" posizionato in alto a destra.
+
+17) Crea una funzione che rimuova tutte le "card" dalla pagina
+
+-->
+  </body>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+  crossorigin="anonymous"
+></script>
+</html>
